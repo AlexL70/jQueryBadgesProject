@@ -1,7 +1,7 @@
 $(function() {
     $.ajax({
         url: 'https://www.codeschool.com/users/2712583.json',
-        datatype: 'jsonp',
+        dataType: 'jsonp',
         success: function(response) {
             var badges = $('#badges');
             $.each(response.courses.completed, function(index, course) {
